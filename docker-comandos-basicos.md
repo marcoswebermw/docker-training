@@ -1,6 +1,7 @@
 ---------------------------------------------------
-### DOCKER: COMANDOS BÁSICOS
+## DOCKER: COMANDOS BÁSICOS
 ---------------------------------------------------
+
 
 #### VERIFICAR AS IMAGENS BAIXADAS
 ```sh
@@ -18,11 +19,12 @@ docker inspect hello-world
 ```
 ---------------------------------------------------
 #### RODANDO COMANDOS NO DOCKER
-```sh
-docker run <parâmetros> <imagem> <CMD[shell]> <argumentos>
-```
 
->EX.: docker run -it --rm --name ola_mundo hello-world bash
+> docker run <parâmetros> <imagem> <CMD[shell]> <argumentos>
+
+```sh
+EX.: docker run -it --rm --name ola_mundo hello-world bash
+```
 
 ---------------------------------------------------
 
@@ -69,7 +71,6 @@ docker run -it --rm -c 512 hello-world
 ```sh
 docker ps
 ```
->Parâmetros:
 
  | Parâmetro | Explicação|
  | --------- | --------- |
@@ -90,11 +91,11 @@ docker ps -aq
 docker stop hello-world
 ```
 
- * __Para reiniciar um container sem criar um novo basta usar o 'start'.__
- * __Os containers do docker foram feitos para executar como processos.__
- * __Então é melhor sempre destruir e criar novos processos ao invés de usar um container antigo.__
- * __Isso já é feito quando usado o parâmetro '--rm'.__
- * __Lembrando que 'containers' são processos e são diferentes de imagens.__
+ > 1. __Para reiniciar um container sem criar um novo basta usar o 'start'.__
+ > 2. __Os containers do docker foram feitos para executar como processos.__
+ > 3. __Então é melhor sempre destruir e criar novos processos ao invés de usar um container antigo.__
+ > 4. __Isso já é feito quando usado o parâmetro '--rm'.__
+ > 5. __Lembrando que 'containers' são processos e são diferentes de imagens.__
 
 ```sh
 docker start hello-world
