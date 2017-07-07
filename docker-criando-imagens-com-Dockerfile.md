@@ -49,14 +49,14 @@ Explicação:
 docker build -t minha_nova_imagem:versao .
 ```
 
-* O parâmetro `-t` indica um nome ou tag no formato 'nome:tag' para a build. No caso será `'minha_nova_imagem:versao'`.
-* Repare o ponto(`.`) no final. Ele indica o contexto(diretório) que será usado para gerar a imagem.
-* Isso significa que no caso com o `'.'` todos os arquivos do diretório atual poderão ser usados dentro do container, que é o que ocorre com o arquivo `'ola.txt'` usado com o `'COPY'`.
-* Nenhum outro arquivo de outro diretório poderá ser reaproveitado aqui.
+>* O parâmetro `-t` indica um nome ou tag no formato 'nome:tag' para a build. No caso será `'minha_nova_imagem:versao'`.
+>* Repare o ponto(`.`) no final. Ele indica o contexto(diretório) que será usado para gerar a imagem.
+>* Isso significa que no caso com o `'.'` todos os arquivos do diretório atual poderão ser usados dentro do container, que é o que ocorre com o arquivo `'ola.txt'` usado com o `'COPY'`.
+>* Nenhum outro arquivo de outro diretório poderá ser reaproveitado aqui.
 
-* A ordem em que os comandos são executados importa. Todo comando que depende de outro deve vir depois da dependência.
-* Se houver uma modificação o docker vai usar um cache e só vai executar os comandos a partir do que foi modificado.
-* Assim, deixando a execução mais rápida do que se tivesse que fazer a operação desde o começo.
+>* A ordem em que os comandos são executados importa. Todo comando que depende de outro deve vir depois da dependência.
+>* Se houver uma modificação o docker vai usar um cache e só vai executar os comandos a partir do que foi modificado.
+>* Assim, deixando a execução mais rápida do que se tivesse que fazer a operação desde o começo.
 
 
 ---------------------------------------------------
