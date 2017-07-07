@@ -50,7 +50,6 @@ docker build -t minha_nova_imagem:versao .
 ```
 
 * O parâmetro `-t` indica um nome ou tag no formato 'nome:tag' para a build. No caso será `'minha_nova_imagem:versao'`.
-* O parametro -t é para dar .
 * Repare o ponto(`.`) no final. Ele indica o contexto(diretório) que será usado para gerar a imagem.
 * Isso significa que no caso com o `'.'` todos os arquivos do diretório atual poderão ser usados dentro do container, que é o que ocorre com o arquivo `'ola.txt'` usado com o `'COPY'`.
 * Nenhum outro arquivo de outro diretório poderá ser reaproveitado aqui.
