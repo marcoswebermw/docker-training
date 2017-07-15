@@ -33,17 +33,18 @@ EX.: docker run -it --rm -v /home/$USER/meu_volume:/meu_volume -e USER=$USER -w 
 | Parâmetro | Explicação|
 | --------- | --------- |
 |         |                                        |
-|   -d    | Execução do container em background.   |
-|   -i    | Modo interativo.                       |
-|   -t    | Aloca um pseudo TTY.                   |
-|  --rm   | Remove o container após a finalização. |
-| --name  | Dá um nome para o container.           |
-|   -v    | Mapeia o volume.                       |
-|   -p    | Mapeia a porta.                        |
-|   -m    | Limita a memória RAM.                  |
 |   -c    | Balanceia o uso de CPU.                |
+|   -d    | Execução do container em background.   |
 |   -e    | Define uma variável de ambiente para o container. |
+|   -i    | Modo interativo.                       |
+|   -m    | Limita a memória RAM.                  |
+| --name  | Dá um nome para o container.           |
+|   -p    | Mapeia a porta.                        |
+|  --rm   | Remove o container após a finalização. |
+|   -t    | Aloca um pseudo TTY.                   |
 | --user  | Define o usuário do container. (Usuário deve existir no container). |
+|   -v    | Mapeia o volume.                       |
+|   -w    | Diretório de trabalho inicial.         |
 
 >O parâmetro '--rm' não funciona quando for usado o '-d'.
 
