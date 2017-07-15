@@ -1,7 +1,10 @@
 ### Volumes
 
-> Volumes são usados para armazenar dados de forma que estes fiquem disponíveis para serem usados em outros containers.
+> Volumes são usados para armazenar dados de forma que estes fiquem disponíveis para serem usados em outros containers ou compartilhados com o host.
 Os dados não ficam limitados ao container atual.
+
+> Se rodarmos um container como root, os arquivos criados em volumes usadados por esse container também pertencerão ao usuário root mesmo depois que o container estiver encerrado. Para evitar esse problema devemos executar o container como um usuário não-root.
+
 
 ##### Criando volumes
 
