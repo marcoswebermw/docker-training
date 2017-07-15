@@ -9,14 +9,27 @@ Os dados não ficam limitados ao container atual.
 
 ##### Listando todos os volumes
 
-`docker volume list`
+`docker volume list` ou `docker volume ls`
 
+##### Inspecionando o volume
+
+`docker volume inspect meu_volume`
 
 ##### Montando um volume dentro de um container
 
 > Será necessário usar o parâmetro `-v` com o comando `docker run`.
 
 `docker container run -it -v meu_volume:/local_de_montagem ubuntu bash`
+
+##### Removendo um volume
+
+> O volume não pode estar em uso por um container para ser removido.
+
+`docker volume rm meu_volume`
+
+##### Removendo todos os volumes que não estão sendo usados por pelo menos um container
+
+`docker volume prune`
 
 ##### Exemplo de criação e uso de volumes:
 
