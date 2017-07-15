@@ -25,7 +25,9 @@ docker inspect hello-world
 ```sh
 EX.: docker run -it --rm --name ola_mundo hello-world bash
 ```
-
+```sh
+EX.: docker run -it --rm -v /home/$USER/meu_volume:/meu_volume -e USER=$USER -w /meu_volume  ubuntu bash
+```
 ---------------------------------------------------
 
 | Parâmetro | Explicação|
@@ -40,6 +42,8 @@ EX.: docker run -it --rm --name ola_mundo hello-world bash
 |   -p    | Mapeia a porta.                        |
 |   -m    | Limita a memória RAM.                  |
 |   -c    | Balanceia o uso de CPU.                |
+|   -e    | Define uma variável de ambiente para o container. |
+| --user  | Define o usuário do container. (Usuário deve existir no container). |
 
 >O parâmetro '--rm' não funciona quando for usado o '-d'.
 
