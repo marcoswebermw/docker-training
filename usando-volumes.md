@@ -52,10 +52,27 @@ Os dados não ficam limitados ao container atual.
 ```sh
 FROM ubuntu:16.04
 MAINTAINER Fulano de Tal <fulano@email.com>
-VOLUME /meu_volume
 RUN apt update && apt install nginx -y
 RUN cd ~ && mkdir novo_diretorio
 RUN rm -rf novo_diretorio
 COPY ola.txt /tmp/ola.txt
+VOLUME /meu_volume
 CMD bash
 ```
+
+
+##### Permissões
+
+> Proceda da seguinte forma para definir as permissões para o nosso volume em `Dockerfile`:
+
+```sh
+FROM ubuntu:16.04
+MAINTAINER Fulano de Tal <fulano@email.com>
+RUN useradd usuario
+RUN mkdir /novo_volume && touch /novo_volume/teste.txt
+RUN chown -R usuario:usuario /novo_volume
+VOLUME /novo_volume
+CMD bash
+```
+
+* O segredo aqui é adicionar o volume depois das permissões.
