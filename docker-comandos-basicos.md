@@ -35,7 +35,8 @@ EX.: docker run -it --rm -v /home/$USER/meu_volume:/meu_volume -e USER=$USER -w 
 |         |                                        |
 |   -c    | Balanceia o uso de CPU.                |
 |   -d    | Execução do container em background.   |
-|   -e    | Define uma variável de ambiente para o container. |
+|   -e    | Define uma variável de ambiente para o container. |
+|   -h    | Define o nome de host para o container. |
 |   -i    | Modo interativo.                       |
 |   -m    | Limita a memória RAM.                  |
 | --name  | Dá um nome para o container.           |
