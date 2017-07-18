@@ -46,7 +46,7 @@ Os dados não ficam limitados ao container atual.
 > Volumes são muito úteis quando precisamos compartilhar arquivos entre vários containers. Como exemplo podemos citar os arquivos de um banco de dados que precisem ser acessado por diversos containers.
 
 
-* Pode ser usado a diretiva `VOLUME` para adicionar um volume pelo `DOCKERFILE`.
+* Pode ser usado a diretiva `VOLUME` para adicionar um volume pelo `Dockerfile`.
 * Os dados dos volumes geralmente ficam gravados no host no diretório `/var/lib/docker/volumes/`.
 
 ```sh
