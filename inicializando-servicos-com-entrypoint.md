@@ -2,8 +2,8 @@
 ### Inicializando Serviços
 ----------------------------------------------------------------------------
 
-Podemos reduzir o comando utilizado para geração de containers, informando no `DOCKERFILE` a instrução `CMD`.  
-Para que ele possa inicializar o Nginx sempre que um container novo for criado. Vamos ao exemplo:
+Podemos reduzir o comando utilizado para geração de containers, informando no `Dockerfile` a instrução `CMD`.  
+Isso será feito para que se possa inicializar um serviço, no caso o Nginx, sempre que um container novo for criado. Vamos ao exemplo:
 
 ```sh
 FROM ubuntu
