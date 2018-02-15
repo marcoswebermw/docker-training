@@ -47,7 +47,7 @@ EX.: docker run -it --rm -v /home/$USER/meu_volume:/meu_volume -e USER=$USER -w 
 |   -v    | Mapeia o volume.                       |
 |   -w    | Diretório de trabalho inicial.         |
 
->O parâmetro '--rm' não funciona quando for usado o '-d'.
+> O parâmetro '--rm' não funciona quando for usado o '-d'.
 
 ---------------------------------------------------
 #### MAPEANDO UMA PORTA
