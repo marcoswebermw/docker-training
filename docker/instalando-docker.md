@@ -1,7 +1,10 @@
 -------------------------------------------------------------------------------------------
 ### INSTALANDO O DOCKER
--------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------  
 
+> ATUALIZAÇÃO: A melhor forma é entrar no site do docker e verificar a melhor forma para seu sistema operacional. Pois essas configurações mudam com frequência.  
+
+> [Link com informações de instalação do Docker](https://docs.docker.com/install/)  
 
 #### CONFIGURANDO O REPOSITÓRIO
 
