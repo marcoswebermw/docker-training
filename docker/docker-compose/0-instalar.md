@@ -30,9 +30,16 @@ sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
   
  ```sh
  sudo rm /usr/local/bin/docker-compose
- ```
-
-
+ ```  
+ 
+## Instalando o Comand-line Completion(Bash)  
+  
+```sh
+sudo curl -L https://raw.githubusercontent.com/docker/compose/1.23.2/contrib/completion/bash/docker-compose -o /etc/bash_completion.d/docker-compose
+```  
+  
+ > Mais em [Command-line completion](https://docs.docker.com/compose/completion/)  
+   
 ## Referências  
 
 [Docs Docker - Install ](https://docs.docker.com/compose/install/)    
