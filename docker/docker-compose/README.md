@@ -2,7 +2,7 @@
 
 - É uma ferramenta para criação e execução de aplicações divididas em múltiplos containers Docker;   
 - Usa um arquivo YAML para configurar os serviços das aplicações - `docker-compose.yml`;  
-- Através de um comando pode criar e iniciar vários containers de acordo com a configuração definida no arquivo `yml`;  
+- Através de um comando pode criar e iniciar vários containers de acordo com a configuração definida no arquivo `yml` ou `yaml`;  
 - Pode ser usado para trocar entre ambientes isolados para desenvolvimento, testes, produção, homologação, etc, tudo de forma rápida;  
 - Facilita a criação de ambientes com integração contínua e entrega contínua;  
 - É possível iniciar, parar, reconstruir serviços. E mesmo iniciar um serviço isoladamente;  
